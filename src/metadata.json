@@ -1,0 +1,9 @@
+{
+  "uuid": "tray-overflow@correaschneider.github.com",
+  "name": "Tray Overflow",
+  "description": "Groups unpinned system tray (AppIndicator) icons behind a ⋯ button, like the Windows tray overflow. Left click opens the drawer, right click pins icons.",
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "settings-schema": "org.gnome.shell.extensions.tray-overflow",
+  "url": "https://github.com/correaschneider/gnome-tray-overflow",
+  "version-name": "1.0.0"
+}

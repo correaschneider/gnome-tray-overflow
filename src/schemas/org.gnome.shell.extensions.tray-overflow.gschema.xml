@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.tray-overflow" path="/org/gnome/shell/extensions/tray-overflow/">
+    <key name="pinned" type="as">
+      <default>["claude-usage-*"]</default>
+      <summary>IDs dos indicadores fixados na barra</summary>
+    </key>
+  </schema>
+</schemalist>

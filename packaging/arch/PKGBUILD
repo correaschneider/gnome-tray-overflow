@@ -1,0 +1,21 @@
+pkgname=gnome-tray-overflow
+pkgver=@VERSION@
+pkgrel=1
+pkgdesc="GNOME Shell extension: tray overflow for AppIndicator icons"
+arch=('any')
+url="https://github.com/correaschneider/gnome-tray-overflow"
+license=('MIT')
+depends=('gnome-shell>=45')
+optdepends=('gnome-shell-extension-appindicator: AppIndicator support')
+source=("$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
+sha256sums=('@SHA256@')
+
+package() {
+  cd "$pkgname-$pkgver"
+  local d="$pkgdir/usr/share/gnome-shell/extensions/@UUID@"
+  install -Dm644 src/extension.js "$d/extension.js"
+  install -Dm644 src/metadata.json "$d/metadata.json"
+  install -Dm644 src/schemas/*.gschema.xml -t "$d/schemas/"
+  glib-compile-schemas "$d/schemas"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

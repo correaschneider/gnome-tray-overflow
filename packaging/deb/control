@@ -1,0 +1,13 @@
+Package: gnome-tray-overflow
+Version: @VERSION@
+Section: gnome
+Priority: optional
+Architecture: all
+Depends: gnome-shell (>= 45)
+Recommends: gnome-shell-extension-appindicator
+Maintainer: Pedro Schneider <noreply@users.noreply.github.com>
+Homepage: https://github.com/correaschneider/gnome-tray-overflow
+Description: GNOME Shell extension: tray overflow for AppIndicator icons
+ Hides unpinned system tray (AppIndicator) icons behind a ⋯ button in the
+ top bar, like the Windows tray overflow. Left click opens a drawer with the
+ hidden icons; right click lists every icon with a switch to pin it.
